@@ -7,5 +7,16 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Hello World!';
-  appName = "my-app";
+  appName = 'Username';
+  userName = '';
+  
+  submitUserName() {
+	this.userName = ((document.getElementById("username-input") as HTMLInputElement).value);
+	((document.getElementById("username-input") as HTMLInputElement).value) = '';
+  }
+  
+  clearUserName(){
+	this.userName = '';
+	((document.getElementById("username-input") as HTMLInputElement).value) = '';
+  }
 }

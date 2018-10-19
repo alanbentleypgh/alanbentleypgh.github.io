@@ -1,3 +1,17 @@
-<h1>
-  {{title}} - Welcome to {{appName}} application!
-</h1>
+<div id="container-div" class="container">
+	<div id="jumbotron-div" class="jumbotron">
+		<h1>
+		  Welcome to {{appName}} application!
+		</h1>	
+	</div>
+	
+	<div id="panel-div" class="panel panel-primary">
+		<div id="panel-body-div" class="panel-body">
+			<h3>Enter a user name:</h3>
+			<input id="username-input"/>
+			<button id="submit-button" class="btn" (click)="submitUserName()">Submit</button>
+			<button id="clear-button" class="btn" (click)="clearUserName()">Clear</button>
+			<h4>Entered user name is: {{userName}}</h4>
+		</div>
+	</div>
+</div>
